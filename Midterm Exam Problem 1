@@ -1,0 +1,71 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOJGrd9wC96+mQF6aR7aCl3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/keanguzon/OOP58001/blob/main/Midterm%20Exam%20Problem%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "id": "_G5ye2XUAnAD",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2f62b05e-07bf-48b9-fcfa-3a16df1ffdaa"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the radius: 4\n",
+            "The area of the circle is 50.26548245743669 \n",
+            "The perimeter of the circle is 25.132741228718345\n"
+          ]
+        }
+      ],
+      "source": [
+        "class Circle:\n",
+        "    def __init__(self, radius):\n",
+        "        self.radius = radius\n",
+        "\n",
+        "    def area(self):\n",
+        "        return 3.141592653589793 * self.radius ** 2\n",
+        "\n",
+        "    def perimeter(self):\n",
+        "        return 2 * 3.141592653589793 * self.radius\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(f\"The area of the circle is {self.area()} \")\n",
+        "        print(f\"The perimeter of the circle is {self.perimeter()}\")\n",
+        "        \n",
+        "radius = float(input(\"Enter the radius: \"))\n",
+        "circle = Circle(radius)\n",
+        "circle.display()"
+      ]
+    }
+  ]
+}
