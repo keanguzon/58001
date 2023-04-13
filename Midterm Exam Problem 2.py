@@ -1,6 +1,6 @@
 from tkinter import *
 
-class MyWindow:
+class FullName:
     def __init__(self, win):
         self.lbl1 = Label(win, text="Enter Given Name:")
         self.lbl1.place(x=100, y=50)
@@ -34,7 +34,7 @@ class MyWindow:
         self.full_name.insert(0, full_name)
 
 window = Tk()
-mywin = MyWindow(window)
+mywin = FullName(window)
 window.geometry("500x325+10+10")
 window.title("Midterm Exam Problem 2")
 window.mainloop()
